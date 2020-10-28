@@ -1,0 +1,13 @@
+#
+https://cms-article-app.azurewebsites.net
+
+VM vs. App Service for CMS app:
+
+Costs - VMs tend to be more expensive than Azure App service, but Azure App service costs money even when the service isn't running.
+Scalability - VMs offer more available scalability options than Azure App service, but VMs are more labor intensive.
+Availability - VMs offer more availability options using multiple grouped VMs.
+Workflow - VMs offer more control, but require more labor to setup and maintain the VM itself.
+
+For this project I chose to use Azure App service, because I felt it was the easiest and fastest deployment.  For the purposes of this project, I didn't require high availability, redundancy or unique software.   
+
+Rule of thumb - If use case requires <14Gb ofmemory or <4 CPUs use App service, if requires more then use VMs.  If the project required above 14Gb of memory or more than 3 CPUs, high amount of customization or high availability, I would likely decide to use VMs instead.
